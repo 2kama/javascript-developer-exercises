@@ -22,6 +22,19 @@ before the next comment block.
 */
 // PLACE YOUR CODE BELOW
 
+for(var i = 1; i<=words.length; i++) {
+    if(i == 1) {
+      wordList = ""
+    }
+
+    if(i == words.length) {
+      wordList = `${wordList}${words[i-1].substr(1,2)}`
+    }else {
+      wordList = `${wordList}${words[i-1].substr(1,2)}, `
+    }
+    
+}
+
 // PLACE YOUR CODE ABOVE
 /*
 When run with "node 2_extracting_words.js" you should see the following on

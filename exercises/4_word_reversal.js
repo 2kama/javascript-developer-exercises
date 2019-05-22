@@ -11,6 +11,17 @@ function reverseLetters(str) {
   // PLACE YOUR CODE BELOW
 
 
+  let splitStr = str.split(" ")
+
+
+  let newString = splitStr.map((item) => {
+
+    return item.split("").reverse().join("")
+    
+  })
+
+  return newString.join(" ")
+
   // PLACE YOUR CODE ABOVE
 }
 

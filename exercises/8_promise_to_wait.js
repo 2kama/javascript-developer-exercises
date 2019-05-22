@@ -16,6 +16,19 @@ to the console, waits 3 more seconds and then writes
 console.log('Go!')
 
 // PLACE YOUR CODE BELOW
+wait(1).then(() => {
+  console.log("I waited 1 second")
+
+  wait(3).then(() => {
+    console.log("I waited 3 more seconds")
+  }).catch( (msg) => {
+  
+  })
+  
+}).catch( (msg) => {
+
+})
+
 
 // PLACE YOUR CODE ABOVE
 /*

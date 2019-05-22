@@ -13,6 +13,36 @@ function paintMixer(color1, color2) {
   */
   // PLACE YOUR CODE BELOW
 
+  let arr = [color1, color2]
+
+  if(arr.indexOf('red') != -1) {
+
+      if(arr.indexOf('blue') != -1) {
+        return("purple")
+      }else if(arr.indexOf('green') != -1) {
+        return("brown")
+      }else if(arr.indexOf('yellow') != -1) {
+        return("orange")
+      }else {
+        return("unknown")
+      }
+
+  }else if(arr.indexOf('blue') != -1) {
+
+      if(arr.indexOf('red') != -1) {
+        return("purple")
+      }else if(arr.indexOf('yellow') != -1) {
+        return("green")
+      }else {
+        return("unknown")
+      }
+
+  }else {
+
+      return("unknown")
+
+  }
+
   // PLACE YOUR CODE ABOVE
 }
 
